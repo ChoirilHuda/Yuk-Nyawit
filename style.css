@@ -1,0 +1,58 @@
+@import url('https://googleapis.com');
+
+*{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1{
+    display: grid;
+    grid-template-rows: 60px 1fr 25px;
+    grid-template-columns: 200px 1fr;
+    overflow: auto;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    grid-area: header;
+    background-color: #657733;
+    color: #d7e3a4;
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 9px 9px 9px 30px; 
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #d7e3a4;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 20px;
+}
+
+.content{
+    grid-area: content;
+    background-color: #ecf5e2;
+    color: #AF9A28;
+    padding: 30px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: x-large;
+}
+
+#sambutan{
+    font-size: xx-large;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #291100;
+    text-align: center;
+    font-size: xx-large;
+}

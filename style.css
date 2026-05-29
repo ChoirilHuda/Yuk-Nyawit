@@ -46,6 +46,10 @@
     font-size: x-large;
 }
 
+.content img {
+    width: 300px;
+}
+
 #sambutan{
     font-size: xx-large;
 }

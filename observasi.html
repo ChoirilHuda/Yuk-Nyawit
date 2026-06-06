@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container1">
+        <div class="header">
+            <h1>YukNyawit</h1>
+            <img src="asset/logo_ijomuda.png" alt="logo" class="logo">
+        </div>
+        <div class="sidebar">
+            <aside class="sidebar" id="sidebar">
+                <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="nav-title">Home</span>
+                        </a>
+                    <li>
+                        <a href="">
+                            <span class="nav-title">Panduan</span>
+                            <span class="nav-sub">Perawatan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hama.html">
+                            <span class="nav-title">Identifikasi</span>
+                            <span class="nav-sub">Hama &amp; Penyakit</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="observasi.html">
+                            <span class="nav-title">Observasi</span>
+                            <span class="nav-sub">Tumbuh Kembang</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reverensi">
+                            <span class="nav-title">Referensi</span>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </aside>
+        </div>
+        <div class="content">
+            <h2>Observasi Tumbuh kembang</h2>
+            <br>
+            <hr>
+            <br>
+            <form action="" method="post">
+                <label for="observasi">Masukkan gambar:</label><br>
+                <input type="file" accept="image/*" name="observasi" id="observasi">
+                <br><br>
+                <label for="tanggal">Masukkan tanggal:</label><br>
+                <input type="date" name="tanggal" id="tanggal">
+                <br><br>
+                <button type="button" id="btnTampilkan">Submit</button>
+                <button type="button" id="btnHapusSemua">Hapus Semua Riwayat</button>
+            </form>
+            <br>
+            <hr>
+            <div id="daftarObservasi" style="margin-top: 20px;">
+            <h3>Daftar Riwayat Observasi:</h3>
+            <br>
+            <div id="listKonten"></div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

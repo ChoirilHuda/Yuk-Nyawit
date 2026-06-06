@@ -72,6 +72,18 @@
     font-size: x-large;
 }
 
+h2{
+    text-align: center;
+}
+
+#logo {
+    border: none;
+    display: block; 
+    margin: 20px auto;
+    height: 200px;
+    width: 200px;
+}
+
 .content img {
     border: #657733 5px solid;
     border-radius: 5%;
@@ -98,4 +110,118 @@
 hr{
     border: none;
     border-top: 2px solid #AF9A28;
+}
+
+.table {
+    width: 100%;
+    max-width: 800px; 
+    border-collapse: collapse; 
+    margin: 20px auto;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    overflow: hidden; 
+    border: none; 
+}
+
+.table th {
+    background-color: #657733;
+    border: #657733;
+    color: #d7e3a4; 
+    text-align: center;
+    padding: 15px;
+    font-size: 22px; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table td {
+    padding: 0;
+    text-align: center; 
+    border: 2px solid #d7e3a4; 
+    font-size: 18px;
+    color: #657733; 
+    font-weight: bold;
+    vertical-align: top; 
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.content .table img {
+    border: #657733 4px solid; 
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px; 
+    height: 150px; 
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+.table-link {
+    display: block; 
+    padding: 20px; 
+    text-decoration: none; 
+    color: #657733; 
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.table-link:hover {
+    background-color: #ecf5e2;
+}
+
+
+.content input[type="file"]::file-selector-button {
+    border: 3px solid #657733;
+    padding: 4px 6px;
+    border-radius: 6px;
+    background-color: #d7e3a4;
+    color: #657733;
+}
+
+
+.content input[type="date"] {
+    border: 3px solid #657733;
+    padding: 4px 6px;
+    border-radius: 6px;
+    background-color: #d7e3a4;
+    color: #657733;
+}
+
+.content button {
+    border: 3px solid #657733;
+    padding: 4px 6px;
+    border-radius: 6px;
+    background-color: #d7e3a4;
+    color: #657733;
+}
+
+.artikel-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.artikel-row {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+}
+
+.artikel-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.artikel-text {
+    flex: 1;
+}
+
+.artikel-img img {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    object-fit: cover;
 }

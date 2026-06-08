@@ -225,3 +225,28 @@ hr{
     height: auto !important;
     object-fit: cover;
 }
+
+.sidebar ul li {
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar ul li:hover {
+    background-color: #c5d88a;
+}
+
+.sidebar a {
+    transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #3e4d1a;
+}
+
+.nav-sub {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    color: #657733;
+    opacity: 0.8;
+}

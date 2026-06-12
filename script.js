@@ -71,3 +71,4 @@ btnHapusSemua.addEventListener('click', function () {
 });
 
 window.onload = muatData;
+

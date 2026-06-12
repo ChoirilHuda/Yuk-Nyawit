@@ -250,3 +250,43 @@ hr{
     color: #657733;
     opacity: 0.8;
 }
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+}
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #d7e3a4;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header" 
+        "content" 
+        "footer";
+    }
+    .hamburger { display: flex; order: -1; }
+    .sidebar {
+        position: fixed;
+        top: 80px;
+        left: -220px;
+        width: 220px;
+        height: calc(93vh - 54px);
+        z-index: 95;
+        transition: left 0.3s ease;
+        background-color: #d7e3a4;
+    }
+    .sidebar.open { left: 0; }
+    .artikel-row, .artikel-row.reverse { flex-direction: column; }
+}

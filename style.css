@@ -87,7 +87,8 @@ h2{
 .content img {
     border: #657733 5px solid;
     border-radius: 5%;
-    width: 400px;
+    width: 350px;
+    height: auto;
 }
 
 .content p {
@@ -103,8 +104,15 @@ h2{
 .footer{
     grid-area: footer;
     background-color: #291100;
+    color: #ecf5e2;
     text-align: center;
-    font-size: xx-large;
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ecf5e2;
 }
 
 hr{
@@ -282,7 +290,7 @@ hr{
         top: 80px;
         left: -220px;
         width: 220px;
-        height: calc(93vh - 54px);
+        height: calc(100vh - 80px);
         z-index: 95;
         transition: left 0.3s ease;
         background-color: #d7e3a4;
